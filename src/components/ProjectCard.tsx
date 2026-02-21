@@ -1,10 +1,12 @@
 // 1. Iniciando o TypeScript: Definindo as regras do card.
 
+import type { ReactNode } from "react";
+
 interface ProjectProps {
   title: string;
   description: string;
-  tecnologies: string[];
-  emoji: string;
+  technologies: string[];
+  icon: ReactNode;
 }
 
 // 2. Montando o visual do Card com TailWind
@@ -12,8 +14,8 @@ interface ProjectProps {
 export function ProjectCard({
   title,
   description,
-  tecnologies,
-  emoji,
+  technologies,
+  icon,
 }: ProjectProps) {
   return (
     <div
@@ -21,12 +23,12 @@ export function ProjectCard({
          transition-all hover:-translate-y-2 hover:shadow-md flex flex-col h-full"
     >
       <div className="w-16 h-16 bg-orange-100 rounded-2xl flex items-center justify-center text-3xl mb-6">
-        {emoji}
+        {icon}
       </div>
       <h3 className="text-2xl font-bold text-gray-800 mb-3">{title}</h3>
-      <p className="text-gray-600 mb-6 flex-grow"></p>
+      <p className="text-gray-600 mb-6 flex-grow">{description}</p>
       <div className="flex flex-wrap gap-2 mb-6">
-        {tecnologias.map((tech) => (
+        {technologies.map((tech) => (
           <span
             key={tech}
             className="bg-blue-50 text-blue-600 px-3 py-1 rounded-full text-sm font-semibold"
@@ -44,3 +46,5 @@ export function ProjectCard({
     </div>
   );
 }
+
+export default ProjectCard;
