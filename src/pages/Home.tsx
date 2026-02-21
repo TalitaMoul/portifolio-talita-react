@@ -3,7 +3,7 @@ import { Projects } from '../components/Projects';
 
 export function Home() {
   return (
-    <> //{/* O que é isso? PESQUISA */}
+    <>
       <main className="max-w-7xl mx-auto px-6 py-12 min-h-[85vh] grid grid-cols-1 md:grid-cols-2 items-center gap-16">
         
         {/* Lado Esquerdo: Textos */}
