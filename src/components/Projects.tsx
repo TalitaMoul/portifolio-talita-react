@@ -24,10 +24,11 @@ export function Projects() {
             <CloudSun className="w-8 h-8 text-orange-500" strokeWidth={2.5} />
           }
           title="Weather App"
-          description="Um aplicativo de previsão do tempo em tempo real consumindo uma API externa."
+          description="Previsão em tempo real via consumo de API REST,
+           com foco em performance e interface totalmente responsiva."
           technologies={["React", "JavaScript", "CSS"]}
-          githubUrl="https://github.com/TalitaMoul/weather_app"
-          deployUrl="https://weather-app-mu-two-20.vercel.app/"
+          demoUrl="https://weather-app-mu-two-20.vercel.app/"
+          repoUrl="https://github.com/TalitaMoul/weather_app"
         />
 
         <ProjectCard
@@ -35,18 +36,21 @@ export function Projects() {
             <ListTodo className="w-8 h-8 text-orange-500" strokeWidth={2.5} />
           }
           title="To-Do List PRO"
-          description="Gerenciador de tarefas com filtro de status e salvamento no LocalStorage do navegador."
+          description="Gerenciador de tarefas com persistência de dados
+           (LocalStorage) e filtros dinâmicos, desenhado para uma experiência contínua do usuário."
           technologies={["React", "Tailwind", "Vite"]}
-          githubUrl="https://github.com/TalitaMoul/Task-Page"
-          deployUrl="https://task-page-eight.vercel.app/"
+          demoUrl="https://task-page-eight.vercel.app/"
+          repoUrl="https://github.com/TalitaMoul/Task-Page"
         />
 
         <ProjectCard
           icon={<Code2 className="w-8 h-8 text-orange-500" strokeWidth={2.5} />}
           title="Meu Portfólio"
-          description="Este próprio site! Desenvolvido do zero com React e Tailwind, aplicando conceitos de componentização e design responsivo."
-          technologies={["React", "TypeScript", "Tailwind"]}
-          githubUrl="https://github.com/TalitaMoul/portifolio-talita-react"
+          description="Desenvolvido com arquitetura de componentes em React e Tailwind CSS,
+           priorizando código limpo, escalabilidade e design responsivo."
+          technologies={["React", "Tailwind", "TypeScript"]}
+          demoUrl="https://portifolio-talita-react.vercel.app/"
+          repoUrl="https://github.com/TalitaMoul/portifolio-talita-react"
         />
       </div>
     </section>

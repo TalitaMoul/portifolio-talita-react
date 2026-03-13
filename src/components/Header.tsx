@@ -1,6 +1,4 @@
 // src/components/Header.tsx
-// 1. Importar a ferramenta Link
-import { Link } from 'react-router-dom';
 
 export function Header() {
   return (
@@ -8,11 +6,33 @@ export function Header() {
       <div className="font-bold text-2xl text-orange-600 tracking-tight">
         Talita<span className="text-gray-500">.dev</span>
       </div>
-      
+
       <nav className="hidden md:flex gap-6">
-        {/* 2. Trocamos "a" por "Link" e "href" por "to" */}
-        <Link to="/" className="text-gray-600 hover:text-orange-500 font-medium transition-colors">Início</Link>
-        <Link to="/sobre" className="text-gray-600 hover:text-orange-500 font-medium transition-colors">Sobre mim</Link>
+        {/* 2. Troquei "href" por "to" */}
+        <a
+          href="#hero"
+          className="text-gray-600 hover:text-orange-500 font-medium transition-colors"
+        >
+          Inicio
+        </a>
+        <a
+          href="#sobre"
+          className="text-gray-600 hover:text-orange-500 font-medium transition-colors"
+        >
+          Sobre mim
+        </a>
+        <a
+          href="#projetos"
+          className="text-gray-600 hover:text-orange-500 font-medium transition-colors"
+        >
+          Projetos
+        </a>
+        <a
+          href="#contato"
+          className="text-gray-600 hover:text-orange-500 font-medium transition-colors"
+        >
+          Contato
+        </a>
       </nav>
     </header>
   );

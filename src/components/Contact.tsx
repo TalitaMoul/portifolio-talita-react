@@ -21,11 +21,10 @@ export function Contato() {
         {/* Texto de apoio menor e mais refinado */}
 
         <p className="text-lg text-gray-600 mb-8 max-w-2xl leading-relaxed">
-          Meu foco é construir interfaces eficientes, limpas e que realmente
-          resolvam o problema do usuário final. Seja para discutir uma
-          oportunidade no Front-end, estruturar um projeto freelance ou trocar
-          experiências sobre tecnologia, escolha o seu canal preferido e vamos
-          conversar.
+          Seja para estruturar um novo projeto Front-end, conversar sobre uma
+          oportunidade na sua equipe ou simplesmente trocar ideias sobre
+          tecnologia (e quem sabe recomendar bons cafés), minha caixa de entrada
+          está sempre aberta. Escolha o seu canal preferido e me mande um "olá"!
         </p>
 
         {/* Botões mais compactos */}
@@ -36,7 +35,7 @@ export function Contato() {
             className="w-full sm:w-auto bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-xl transition-all hover:-translate-y-1 hover:shadow-md flex items-center justify-center gap-2"
           >
             <Mail size={18} />
-            Me mande um E-mail
+            Enviar E-mail
           </a>
 
           <a
