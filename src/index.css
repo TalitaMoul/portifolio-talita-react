@@ -2,6 +2,26 @@
 
 @theme {
   --font-sans: "Poppins", sans-serif;
+
+  /* 1. Criando a variável da animação que o Tailwind vai ler como 'animate-shake' */
+  --animate-shake: shake 0.4s ease-in-out;
+
+  /* 2. Definindo o movimento do balanço */
+  @keyframes shake {
+    0%,
+    100% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(-12deg);
+    }
+    50% {
+      transform: rotate(12deg);
+    }
+    75% {
+      transform: rotate(-6deg);
+    }
+  }
 }
 
 html {

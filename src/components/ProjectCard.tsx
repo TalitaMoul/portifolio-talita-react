@@ -41,7 +41,7 @@ export function ProjectCard({
       </div>
 
       {/* Descrição - Agora sendo utilizada! */}
-      <p className="text-gray-600 mb-6 leading-relaxed flex-grow">
+      <p className="text-gray-600 mb-6 leading-relaxed grow">
         {description}
       </p>
 
@@ -65,7 +65,7 @@ export function ProjectCard({
           href={demoUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex-1 bg-gray-50 hover:bg-gray-100 text-gray-900 font-bold py-3 px-4 rounded-xl transition-all flex items-center justify-center gap-2 border border-gray-100"
+          className="flex-1 bg-gray-50 hover:bg-gray-300 text-gray-900 font-bold py-3 px-4 rounded-xl transition-all flex items-center justify-center gap-2 border border-gray-100"
         >
           Acessar Aplicação
           <ExternalLink size={18} className="text-gray-400" />

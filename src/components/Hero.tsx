@@ -1,22 +1,23 @@
 // src/components/Hero.tsx
 import { ArrowRight, Mail } from "lucide-react"; // Removi o Terminal para focar na foto
-import Projects from "./Projects";
-import { About } from "./About";
 
 export function Hero() {
   return (
     <>
-      <section id="hero" className="pt-32 pb-20 px-6 max-w-7xl mx-auto">
+      <section
+        id="hero"
+        className="pt-32 pb-42 px-6 max-w-7xl mx-auto scroll-mt-40"
+      >
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Coluna da Esquerda: Textos e Botões */}
           <div>
-            {/* 1. O Ponto de Contato (Descomentei e ajustei o seu balãozinho) */}
+            {/* 1. O Ponto de Contato (Descomentei e ajustei o balão) */}
             <div className="inline-block px-5 py-2 bg-orange-100 rounded-full text-orange-600 font-bold mb-6 shadow-sm border border-orange-200">
               Olá, eu sou a Talita.
             </div>
 
-            {/* 2. O Título Principal - Muito maior e imponente */}
-            {/* Aumentei para text-5xl lg:text-6xl para dar mais peso ao cargo */}
+            {/* 2. O Título Principal */}
+            {/* Aumentei para text-5xl lg:text-6xl para dar mais peso*/}
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 mb-6 tracking-tight leading-tight">
               Desenvolvedora <br className="hidden lg:block" />
               <span className="text-blue-600">Front-end.</span>
@@ -52,7 +53,7 @@ export function Hero() {
             </div>
           </div>
           <div className="hidden lg:flex justify-end relative">
-            <div className="w-[28rem] h-[28rem] bg-orange-100 rounded-[3rem] overflow-hidden transform rotate-3 hover:rotate-0 transition-transform duration-500 shadow-xl border-4 border-white">
+            <div className="w-md h-112 bg-orange-100 rounded-[3rem] overflow-hidden transform rotate-3 hover:rotate-0 transition-transform duration-500 shadow-xl border-4 border-white">
               <img
                 src="/sua-foto-aqui.jpg" //
                 alt="Foto da Talita, Desenvolvedora Front-end"
@@ -62,8 +63,6 @@ export function Hero() {
           </div>
         </div>
       </section>
-      <Projects />
-      <About />
     </>
   );
 }

@@ -4,20 +4,20 @@ import { CloudSun, ListTodo, Code2 } from "lucide-react";
 
 export function Projects() {
   return (
-    <section id="projetos" className="py-20 px-6 max-w-7xl mx-auto">
+    <section id="projetos" className="py-20 px-6 max-w-7xl mx-auto scroll-mt-25">
       {/* Cabeçalho da Seção */}
-      <div className="text-center mb-16">
-        <h2 className="text-4xl lg:text-5xl font-extrabold text-gray-800 mb-4">
+      <div className="text-center mb-20">
+        <h2 className="text-4xl lg:text-5xl font-extrabold text-gray-800 mb-10">
           Meus <span className="text-orange-500">Projetos</span>
         </h2>
-        <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+        <p className="text-xl text-gray-600 max-w-4xl mx-auto">
           Uma seleção de projetos práticos construídos com as ferramentas mais
           modernas do mercado.
         </p>
       </div>
 
       {/* Grid de Cartões */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-13">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-15">
         {/* Usando o componente ProjectCard 3 vezes com dados diferentes */}
         <ProjectCard
           icon={
