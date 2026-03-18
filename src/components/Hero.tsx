@@ -55,9 +55,10 @@ export function Hero() {
           <div className="hidden lg:flex justify-end relative">
             <div className="w-md h-112 bg-orange-100 rounded-[3rem] overflow-hidden transform rotate-3 hover:rotate-0 transition-transform duration-500 shadow-xl border-4 border-white">
               <img
-                src="/sua-foto-aqui.jpg" //
+                src="src\assets\me\eu3.png"
                 alt="Foto da Talita, Desenvolvedora Front-end"
-                className="w-full h-full object-cover"
+                // Adicionei 'object-[20%_center]' para puxar a foto um pouco para a esquerda
+                className="w-full h-full object-cover object-[65%_center]"
               />
             </div>
           </div>
