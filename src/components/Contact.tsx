@@ -7,14 +7,13 @@ export function Contato() {
   const [copiado, setCopiado] = useState(false);
   const email = "talitamoulin11@gmail.com";
 
-  const handleCopiarEmail = (e: React.MouseEvent<HTMLAnchorElement>) => {
+  const handleCopiarEmail = () => {
     // Tenta copiar o e-mail para a área de transferência
     navigator.clipboard.writeText(email).then(() => {
       setCopiado(true);
       // Volta o texto original depois de 2 segundos
       setTimeout(() => setCopiado(false), 2000);
     });
-    
   };
 
   return (
@@ -23,9 +22,9 @@ export function Contato() {
       className="py-24 px-6 mt-12 bg-white border-t border-orange-50"
     >
       <div className="max-w-3xl mx-auto text-center flex flex-col items-center">
-        
         <h2 className="text-3xl lg:text-4xl font-extrabold text-gray-800 mb-4 tracking-tight">
-          Vamos tomar um <span className="text-orange-500">café</span> e falar sobre código?
+          Vamos tomar um <span className="text-orange-500">café</span> e falar
+          sobre código?
         </h2>
 
         <p className="text-lg text-gray-600 mb-8 max-w-2xl leading-relaxed">
