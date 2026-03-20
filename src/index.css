@@ -5,6 +5,7 @@
 
   /* 1. Criando a variável da animação que o Tailwind vai ler como 'animate-shake' */
   --animate-shake: shake 0.4s ease-in-out;
+  --animate-patinha-pulo: patinhaPulo 0.6s ease-out;
 
   /* 2. Definindo o movimento do balanço */
   @keyframes shake {
@@ -20,6 +21,20 @@
     }
     75% {
       transform: rotate(-6deg);
+    }
+  }
+  @keyframes patinhaPulo {
+    0% { 
+      transform: translateY(10px) rotate(-10deg); 
+      opacity: 0; 
+    }
+    60% { 
+      transform: translateY(-5px) rotate(5deg); 
+      opacity: 1; 
+    }
+    100% { 
+      transform: translateY(0) rotate(0deg); 
+      opacity: 1; 
     }
   }
 }

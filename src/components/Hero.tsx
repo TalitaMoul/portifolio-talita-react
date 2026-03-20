@@ -1,29 +1,26 @@
 // src/components/Hero.tsx
-import { ArrowRight, Mail } from "lucide-react"; // Removi o Terminal para focar na foto
+import { ArrowRight, Mail } from "lucide-react";
 
 export function Hero() {
   return (
     <>
       <section
         id="hero"
-        className="pt-32 pb-42 px-6 max-w-7xl mx-auto scroll-mt-40"
+        // AJUSTE: pt-24 pb-16 no mobile, pt-32 pb-32 no desktop
+        className="pt-24 pb-16 lg:pt-32 lg:pb-32 px-6 max-w-7xl mx-auto scroll-mt-40"
       >
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Coluna da Esquerda: Textos e Botões */}
           <div>
-            {/* 1. O Ponto de Contato (Descomentei e ajustei o balão) */}
             <div className="inline-block px-5 py-2 bg-orange-100 rounded-full text-orange-600 font-bold mb-6 shadow-sm border border-orange-200">
               Olá, eu sou a Talita.
             </div>
 
-            {/* 2. O Título Principal */}
-            {/* Aumentei para text-5xl lg:text-6xl para dar mais peso*/}
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 mb-6 tracking-tight leading-tight">
               Desenvolvedora <br className="hidden lg:block" />
               <span className="text-blue-600">Front-end.</span>
             </h1>
 
-            {/* 3. O Parágrafo de Apoio - Texto com autoridade */}
             <p className="text-lg lg:text-xl text-gray-600 mb-10 max-w-xl leading-relaxed">
               Trago a minha vivência na resolução de problemas críticos para a
               construção de interfaces. Utilizo{" "}
@@ -52,12 +49,13 @@ export function Hero() {
               </a>
             </div>
           </div>
+          
           <div className="hidden lg:flex justify-end relative">
             <div className="w-md h-112 bg-orange-100 rounded-[3rem] overflow-hidden transform rotate-3 hover:rotate-0 transition-transform duration-500 shadow-xl border-4 border-white">
+              {/* AJUSTE: O caminho para imagens na pasta public */}
               <img
-                src="src\assets\me\eu3.png"
+                src="/me.png"
                 alt="Foto da Talita, Desenvolvedora Front-end"
-                // Adicionei 'object-[20%_center]' para puxar a foto um pouco para a esquerda
                 className="w-full h-full object-cover object-[65%_center]"
               />
             </div>
